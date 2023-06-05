@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My University</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+		}
+		section {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #34176b;
+			scroll-snap-align: start;
+			position: relative;
+		}
+		#jobs {
+			height: auto;
+		}
+		#Subjects {
+			height: 100vh;
+		}
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 0.5rem;
+			color: white;
+		}
+		#home h1, #about h1, #Subjects h1, #jobs h1 {
+			font-size: 2.5rem;
+		}
+		p {
+			font-size: 1.2rem;
+			text-align: center;
+			color: white;
+		}
+		nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: #a566cc;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem;
+			z-index: 1;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			font-size: 1rem;
+			padding: 0.5rem;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+		nav a:hover {
+			background-color: #34176b;
+			color: white;
+			border-radius: 0.5rem;
+		}
+		section img {
+			position: absolute;
+			top: 24%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 30%;
+			max-height: 30%;
+			object-fit: contain;
+		}
+		.about-image {
+			position: absolute;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 70%;
+			max-height: 70%;
+			object-fit: contain;
+		}
+		
+		.jobs-image {
+			position: absolute;
+			top: -15%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 40%;
+			max-height: 40%;
+			object-fit: contain;
+		}
+		table {
+			border-collapse: collapse;
+			margin-top: 2rem;
+			width: 80%;
+			background-color: #fff;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			font-size: 1rem;
+		}
+		th, td {
+			padding: 1rem;
+			text-align: center;
+		}
+		th {
+			background-color: #a566cc;
+			color: #fff;
+		}
+		td {
+			border-bottom: 1px solid #a566cc;
+		}
+		caption {
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin-bottom: 1rem;
+			color: white;
+		}
+		#Subjects div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 100%;
+			overflow-y: scroll;
+		}
+		@media screen and (max-width: 767px) {
+			nav {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			nav a {
+				display: block;
+				padding: 0.5rem 1rem;
+				font-size: 1.2rem;
+			}
+			h1 {
+				font-size: 2rem;
+			}
+			section img {
+				max-width: 90%;
+				max-height: 90%;
+			}
+			.about-image {
+				max-width: 90%;
+				max-height: 90%;
+			}
+			table {
+				font-size: 1.2rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#home">الصفحة الرئيسية</a>
+		<a href="#about">من نحن؟</a>
+		<a href="#Subjects">موادنا</a>
+		<a href="#jobs">وظائفنا</a>
+	</nav>
+	<section id="home">
+		<h1>Welcome to the IT Department</h1>
+		<p></p>
+		<img src="./2.jpg" alt="Click">
+	</section>
+	<section id="about">
+		<h1>من نحن؟</h1>
+		<img class="about-image" src="./about.png" alt="Click">
+		<p>ممَّا لا شك به اليوم أن " تكنولوجيا المعلومات" والتي
+		 ذات شعبية كبيرة بين الطلبة وذلك لأنَّ التكنولوجيا وتخصصاتها بطبيعتها ملفته
+
+
+تخصص تكنولوجيا المعلومات  هو مجال يتعلق بتصميم وتطوير أنظمة المعلومات وتطوير البرمجيات والتعامل مع البيانات والشبكات والأمن السيبراني. ويهدف هذا التخصص إلى تزويد الطلبة بالمهارات والمعرفة اللازمة للعمل في صناعة التكنولوجيا وتطوير الحلول الرقمية لمختلف القطاعات الاقتصادية والاجتماعية.</p>
+	</section>
+	<section id="Subjects">
+		<h1>موادنا</h1>
+		<img class="jobs-image" src="./RU.png" alt="Click">
+		<div>
+			<table>
+				<caption>جدول المواد لتخصص تكنولوجيا المعلومات الترم الاول</caption>
+      <thead>
+        <tr>
+          <th>Course Title</th>
+          <th>Term</th>
+          <th>Course No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Islamic Culture 1</td>
+          <td>First Term</td>
+          <td>AAU111</td>
+        </tr>
+        <tr>
+          <td>Arabic Language 1</td>
+          <td>First Term</td>
+          <td>AAU112</td>
+        </tr>
+        <tr>
+          <td>English Language 1</td>
+          <td>First Term</td>
+          <td>AAU113</td>
+        </tr>
+        <tr>
+          <td>Computer Skills</td>
+          <td>First Term</td>
+          <td>AAU114</td>
+        </tr>
+        <tr>
+          <td>Differential Calculus</td>
+          <td>First Term</td>
+          <td>EIT115</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>جدول المواد للفصل الدراسي الثاني</caption>
+      <thead>
+        <tr>
+          <th>Course Title</th>
+          <th>Term</th>
+          <th>Course No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Islamic Culture 2</td>
+          <td>Second Term</td>
+          <td>AAU121</td>
+        </tr>
+        <tr>
+          <td>English Language 2</td>
+          <td>Second Term</td>
+          <td>AAU123</td>
+        </tr>
+        <tr>
+          <td>Arabic Language 2</td>
+          <td>Second Term</td>
+          <td>AAU122</td>
+        </tr>
+        <tr>
+          <td>Communication Skills</td>
+          <td>Second Term</td>
+          <td>AAU124</td>
+        </tr>
+        <tr>
+          <td>Integral Calculus</td>
+          <td>Second Term</td>
+          <td>IT127</td>
+        </tr>
+		<tr>
+          <td>Computer Programming 1</td>
+          <td>Second Term</td>
+          <td>IT126</td>
+		 </tr>
+      </tbody>
+    </table>
+	<table>
+      <caption>للفصل الدراسي الثالث</caption>
+      <thead>
+        <tr>
+          <th>Course Title</th>
+          <th>Term</th>
+          <th>Course No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Differential Equations</td>
+          <td>Third Term</td>
+          <td>EIT211</td>
+        </tr>
+        <tr>
+          <td>Technical Writing</td>
+          <td>Third Term</td>
+          <td>EIT212</td>
+        </tr>
+        <tr>
+          <td>Principle of economics</td>
+          <td>Third Term</td>
+          <td>EIT213</td>
+        </tr>
+        <tr>
+          <td>Computer Programming 2</td>
+          <td>Third Term</td>
+          <td>IT214</td>
+        </tr>
+        <tr>
+          <td>Digital Logic</td>
+          <td>Third Term</td>
+          <td>IT215</td>
+        </tr>
+		<tr>
+          <td>Principles of management and business</td>
+          <td>Third Term</td>
+          <td>IT216</td>
+		 </tr>
+		 <tr>
+          <td>Human-Computer Interaction</td>
+          <td>Third Term</td>
+          <td>IT217</td>
+		 </tr>
+      </tbody>
+    </table>
+	<table>
+      <caption>للفصل الدراسي الرابع</caption>
+      <thead>
+        <tr>
+          <th>Course Title</th>
+          <th>Term</th>
+          <th>Course No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Professional Ethics</td>
+          <td>Fourth Term</td>
+          <td>IT221</td>
+        </tr>
+        <tr>
+          <td>Introduction To Probability & Statistics</td>
+          <td>Fourth Term</td>
+          <td>EIT222</td>
+        </tr>
+        <tr>
+          <td>Linear Algebra</td>
+          <td>Fourth Term</td>
+          <td>EIT223</td>
+        </tr>
+        <tr>
+          <td>Computer Architecture & Organization</td>
+          <td>Fourth Term</td>
+          <td>IT224</td>
+        </tr>
+        <tr>
+          <td>Visual Programming</td>
+          <td>Fourth Term</td>
+          <td>IT225</td>
+        </tr>
+		<tr>
+          <td>Data Structures</td>
+          <td>Fourth Term</td>
+          <td>IT226</td>
+		 </tr>
+      </tbody>
+    </table>
+	<table>
+      <caption>للفصل الدراسي الخامس</caption>
+      <thead>
+        <tr>
+          <th>Course Title</th>
+          <th>Term</th>
+          <th>Course No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Learning & Thinking & Research</td>
+          <td>Fifth Term</td>
+          <td>EIT311</td>
+        </tr>
+        <tr>
+          <td>Systems Analysis & Design</td>
+          <td>Fifth Term</td>
+          <td>IT312</td>
+        </tr>
+        <tr>
+          <td>Introduction To Database</td>
+          <td>Fifth Term</td>
+          <td>IT313</td>
+        </tr>
+        <tr>
+          <td>Web systems</td>
+          <td>Fifth Term</td>
+          <td>IT314</td>
+        </tr>
+        <tr>
+          <td>Computer Networks</td>
+          <td>Fifth Term</td>
+          <td>IT315</td>
+        </tr>
+		<tr>
+          <td>Operating System</td>
+          <td>Fifth Term</td>
+          <td>IT316</td>
+		 </tr>
+      </tbody>
+    </table>
+	<table>
+      <caption>للفصل الدراسي السادس</caption>
+      <thead>
+        <tr>
+          <th>Course Title</th>
+          <th>Term</th>
+          <th>Course No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Software Engineering</td>
+          <td>Sixth Term</td>
+          <td>IT321</td>
+        </tr>
+        <tr>
+          <td>Information Security</td>
+          <td>Sixth Term</td>
+          <td>IT322</td>
+        </tr>
+        <tr>
+          <td>Project Management</td>
+          <td>Sixth Term</td>
+          <td>IT323</td>
+        </tr>
+        <tr>
+          <td>Web Applications Development</td>
+          <td>Sixth Term</td>
+          <td>IT324</td>
+        </tr>
+        <tr>
+          <td>Database Administration</td>
+          <td>Sixth Term</td>
+          <td>IT325</td>
+        </tr>
+		<tr>
+          <td>Network Routing and Switching</td>
+          <td>Sixth Term</td>
+          <td>IT3XX</td>
+		 </tr>
+      </tbody>
+    </table>
+	<table>
+      <caption>للفصل الدراسي السابع</caption>
+      <thead>
+        <tr>
+          <th>Course Title</th>
+          <th>Term</th>
+          <th>Course No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Graduation Project 1</td>
+          <td>Seventh Term</td>
+          <td>IT411</td>
+        </tr>
+        <tr>
+          <td>Network Security</td>
+          <td>Seventh Term</td>
+          <td>IT412</td>
+        </tr>
+        <tr>
+          <td>Network Design</td>
+          <td>Seventh Term</td>
+          <td>IT413</td>
+        </tr>
+        <tr>
+          <td>Mobile Application Development</td>
+          <td>Seventh Term</td>
+          <td>IT4XX</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td>Seventh Term</td>
+          <td>IT4XX</td>
+        </tr>
+      </tbody>
+    </table>
+	<table>
+      <caption>للفصل الدراسي الثامن</caption>
+      <thead>
+        <tr>
+          <th>Course Title</th>
+          <th>Term</th>
+          <th>Course No</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Graduation Project 2</td>
+          <td>Eighth Term</td>
+          <td>IT421</td>
+        </tr>
+        <tr>
+          <td>Multimedia Technologies</td>
+          <td>Eighth Term</td>
+          <td>IT422</td>
+        </tr>
+        <tr>
+          <td>Network Administration</td>
+          <td>Eighth Term</td>
+          <td>IT423</td>
+        </tr>
+        <tr>
+          <td>Advanced Mobile Application Development</td>
+          <td>Eighth Term</td>
+          <td>IT4XX</td>
+        </tr>
+        
+      </tbody>
+    </table>
+		</div>
+	</section>
+	<section id="jobs">
+		<h1>وظائفنا</h1>
+		
+		<p>تطوير البرمجيات: حيث يمكن للخريجين العمل على تطوير البرامج والتطبيقات المختلفة، سواءً على المستوى الحكومي أو الخاص. </p>
+
+ <p> تصميم وتطوير مواقع الويب: حيث يمكن للخريجين العمل على تصميم وتطوير مواقع الويب المختلفة، سواءً للشركات أو المؤسسات أو الأفراد. </p>
+
+ <p>تصميم وإدارة قواعد البيانات: حيث يمكن للخريجين العمل على تصميم وإدارة قواعد البيانات المختلفة، سواءً للشركات أو المؤسسات أو الحكومة. </p>
+
+ <p>تصميم وتطوير تطبيقات الجوال: حيث يمكن للخريجين العمل على تصميم وتطوير تطبيقات الجوال المختلفة، سواءً للشركات أو المؤسسات أو الأفراد. </p>
+
+<p>إدارة وصيانة الشبكات: حيث يمكن للخريجين العمل على إدارة وصيانة شبكات الحاسوب المختلفة، سواءً للشركات أو المؤسسات أو الحكومة. </p>
+
+<p> أمن المعلومات: حيث يمكن للخريجين العمل على حماية المعلومات والبيانات المختلفة، سواءً على المستوى الحكومي أو الخاص. </p>
+
+ <p>التحليل البياني: حيث يمكن للخريجين العمل على تحليل البيانات واستخراج المعلومات القيمة منها، سواءً للشركات أو المؤسسات أو الحكومة. </p>
+
+
+
+ <p>تطوير الألعاب الإلكترونية: حيث يمكن للخريجين العمل على تطوير الألعاب الإلكترونية المختلفة والتي تشكل صناعة كبيرة في العالم. </p>
+
+ <p>التسويق الرقمي: حيث يمكن للخريجين العمل على تصميم وتنفيذ حملات التسويق الرقمي المختلفة باستخدام الأدوات التكنولوجية. </p>
+
+ <p>التعليم الإلكتروني: حيث يمكن للخريجين العمل على تصميم وتطوير منصات التعليم الإلكتروني والتي تستخدم بشكل واسع في العالم. </p>
+
+ <p>تقنية الذكاء الاصطناعي: حيث يمكن للخريجين العمل على تطوير وتصميم حلول الذكاء الاصطناعي والتي تشكل مجالًا حيويًا في العالم التقني. </p>
+
+<p>تطوير برامج الصوتيات: حيث يمكن للخريجين العمل على تصميم وتطوير برامج الصوتيات المختلفة، مثل برامج تحويل النصوص إلى كلام أو تطبيقات تسجيل الصوت. </p>
+
+
+ <p>تطوير الروبوتات: حيث يمكن للخريجين العمل على تصميم وتطوير الروبوتات المختلفة، وتطبيقاتها في المجالات المختلفة مثل الطب والتصنيع والخدمات.</p>
+	</section>
+</body>
+</html>
